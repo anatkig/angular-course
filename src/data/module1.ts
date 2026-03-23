@@ -77,7 +77,7 @@ enum Direction {
   Right = 'RIGHT',
 }
 \`\`\``,
-      task: {
+      tasks: [{
         description:
           'Create a TypeScript interface for a Product with id (number), name (string), price (number), and an optional description (string). Then create a generic function that filters an array by a predicate.',
         starterCode: `// TODO: Create Product interface
@@ -106,7 +106,7 @@ const expensive = filterItems(products, p => p.price > 100);`,
           'Generics use <T> syntax for type parameters',
           'The predicate is a function that returns a boolean',
         ],
-      },
+      }],
     },
     {
       id: 'mod1-t2',
@@ -170,7 +170,7 @@ Angular 17+ defaults to **standalone components**:
 })
 export class AppComponent {}
 \`\`\``,
-      task: {
+      tasks: [{
         description:
           'Write the Angular CLI commands to: 1) Create a new project called "task-manager", 2) Generate a component called "task-list", 3) Generate a service called "task".',
         starterCode: `// Write the CLI commands as comments:
@@ -192,7 +192,7 @@ export class AppComponent {}
           'ng generate (or ng g) creates new files',
           'Use shorthand: c for component, s for service',
         ],
-      },
+      }],
     },
     {
       id: 'mod1-t3',
@@ -250,7 +250,7 @@ Use **double curly braces** to display component data:
 <p>{{ 1 + 1 }}</p>
 <p>{{ user.name.toUpperCase() }}</p>
 \`\`\``,
-      task: {
+      tasks: [{
         description:
           'Create a standalone Angular component called UserCardComponent that displays a user\'s name, email, and role using interpolation.',
         starterCode: `import { Component } from '@angular/core';
@@ -295,7 +295,7 @@ export class UserCardComponent {
           'Define properties directly in the class',
           'The @Component decorator configures the component',
         ],
-      },
+      }],
     },
     {
       id: 'mod1-t4',
@@ -362,7 +362,7 @@ export class CounterComponent {
   decrement() { this.count--; }
 }
 \`\`\``,
-      task: {
+      tasks: [{
         description:
           'Create a component with a text input that uses two-way binding to update a greeting message displayed below it. Add a button that resets the input to empty.',
         starterCode: `import { Component } from '@angular/core';
@@ -406,7 +406,7 @@ export class GreetingComponent {
           'Import FormsModule to use ngModel',
           'Use (click)="method()" for event binding',
         ],
-      },
+      }],
     },
   ],
   test: [

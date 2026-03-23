@@ -56,7 +56,7 @@ Angular 17 introduced **built-in control flow** syntax that replaces structural 
 @let fullName = user.firstName + ' ' + user.lastName;
 <h2>{{ fullName }}</h2>
 \`\`\``,
-      task: {
+      tasks: [{
         description: 'Create a template that uses @if to show/hide a message, @for to iterate over a list of users with track, and @switch for a status badge.',
         starterCode: `<!-- users: { id: number, name: string, status: string }[] -->
 
@@ -87,7 +87,7 @@ Angular 17 introduced **built-in control flow** syntax that replaces structural 
           '@if / @else replaces *ngIf with else template',
           '@switch replaces ngSwitch directive',
         ],
-      },
+      }],
     },
     {
       id: 'mod2-t2',
@@ -140,7 +140,7 @@ These directives change the DOM structure by adding or removing elements.
   <p>Content loaded!</p>
 </ng-template>
 \`\`\``,
-      task: {
+      tasks: [{
         description: 'Create a product list using *ngFor with index and trackBy. Show a "no products" message with *ngIf when the list is empty.',
         starterCode: `<!-- products: { id: number, name: string, price: number }[] -->
 
@@ -162,7 +162,7 @@ These directives change the DOM structure by adding or removing elements.
           'trackBy improves performance by tracking items by a unique key',
           '*ngIf with else uses a template reference variable',
         ],
-      },
+      }],
     },
     {
       id: 'mod2-t3',
@@ -210,7 +210,7 @@ These directives change the appearance or behavior of elements.
 <input #nameInput type="text" />
 <button (click)="greet(nameInput.value)">Greet</button>
 \`\`\``,
-      task: {
+      tasks: [{
         description: 'Create a component with a list of items. Use [ngClass] to apply different CSS classes based on item status (active, pending, completed). Add a button that toggles an item\'s status.',
         starterCode: `<!-- items: { name: string, status: 'active' | 'pending' | 'completed' }[] -->
 
@@ -239,7 +239,7 @@ These directives change the appearance or behavior of elements.
           'Use modulo (%) to cycle through values',
           'Each class condition is evaluated independently',
         ],
-      },
+      }],
     },
   ],
   test: [

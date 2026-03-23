@@ -57,7 +57,7 @@ export class MyComponent {
   label = input('default');           // inferred type
 }
 \`\`\``,
-      task: {
+      tasks: [{
         description: 'Create a child ProductCard component that receives a product object via @Input and displays its name and price.',
         starterCode: `import { Component, Input } from '@angular/core';
 
@@ -101,7 +101,7 @@ export class ProductCardComponent {
           'Use { required: true } for mandatory inputs',
           'The ! (non-null assertion) tells TS the value will be set',
         ],
-      },
+      }],
     },
     {
       id: 'mod3-t2',
@@ -158,7 +158,7 @@ export class MyComponent {
   onSelect(item: Item) { this.selected.emit(item); }
 }
 \`\`\``,
-      task: {
+      tasks: [{
         description: 'Create a RatingComponent that shows 5 stars. When a star is clicked, emit the rating value (1-5) to the parent using @Output.',
         starterCode: `import { Component, Output, EventEmitter } from '@angular/core';
 
@@ -203,7 +203,7 @@ export class RatingComponent {
           'Use .emit(value) to send data to the parent',
           'The parent listens with (eventName)="handler($event)"',
         ],
-      },
+      }],
     },
     {
       id: 'mod3-t3',
@@ -255,7 +255,7 @@ export class LayoutComponent {}
   <div footer>Footer Content</div>
 </app-layout>
 \`\`\``,
-      task: {
+      tasks: [{
         description: 'Create a reusable DialogComponent with multi-slot content projection for a title, body, and actions area.',
         starterCode: `@Component({
   selector: 'app-dialog',
@@ -300,7 +300,7 @@ export class DialogComponent {}
           'Default ng-content (no select) catches unmatched content',
           'Use descriptive attribute names for clarity',
         ],
-      },
+      }],
     },
   ],
   test: [

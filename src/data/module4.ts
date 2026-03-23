@@ -64,7 +64,7 @@ export class UserListComponent {
   users = this.userService.getUsers();
 }
 \`\`\``,
-      task: {
+      tasks: [{
         description: 'Create a TodoService with methods to get all todos, add a todo, and toggle a todo\'s completed status. Use providedIn: root.',
         starterCode: `import { Injectable } from '@angular/core';
 
@@ -111,7 +111,7 @@ export class TodoService {
           'Use private arrays to store state in the service',
           'The inject() function is the modern alternative to constructor injection',
         ],
-      },
+      }],
     },
     {
       id: 'mod4-t2',
@@ -166,7 +166,7 @@ providers: [
   },
 ]
 \`\`\``,
-      task: {
+      tasks: [{
         description: 'Create an InjectionToken for an API configuration object and provide it at the app level. Inject it in a service.',
         starterCode: `import { InjectionToken, Injectable, inject } from '@angular/core';
 
@@ -204,7 +204,7 @@ export class ApiService {
           'Use useValue to provide a constant object',
           'inject() works inside constructors and field initializers',
         ],
-      },
+      }],
     },
     {
       id: 'mod4-t3',
@@ -251,7 +251,7 @@ export class EditorComponent {
   constructor(private state: EditorState) {}
 }
 \`\`\``,
-      task: {
+      tasks: [{
         description: 'Create a LoggerService and provide it at different levels. Use @Optional and @SkipSelf to control resolution.',
         starterCode: `import { Injectable, Optional, SkipSelf } from '@angular/core';
 
@@ -296,7 +296,7 @@ export class FeatureComponent {
           '@SkipSelf looks at the parent injector, not the current one',
           'Component-level providers create unique instances per component',
         ],
-      },
+      }],
     },
   ],
   test: [
